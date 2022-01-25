@@ -1,0 +1,44 @@
+$table-width: 100px;
+$border-color: #333;
+
+.mandora {
+  margin: auto;
+  // width: 100%;
+  // max-width: 1200px;
+  border: none;
+  border-collapse: collapse;
+
+  tr {
+    &:nth-child(3n) {
+      border-bottom: 3px solid $border-color;
+    }
+  }
+
+  td {
+    padding: 0.25rem;
+    width: $table-width;
+    height: $table-width;
+    border: 1px solid $border-color;
+    text-align: center;
+
+    &:nth-child(3),
+    &:nth-child(6) {
+      border-right: 2px solid $border-color;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    input,
+    textarea {
+      vertical-align: middle;
+      width: $table-width;
+      background-color: transparent;
+      border: none;
+      text-align: center;
+      font-size: 20px;
+      resize: none;
+    }
+  }
+}
