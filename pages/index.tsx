@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Header />
-      <h1>Write Your Mandora Goals</h1>
+      <h1 className='text-4xl p-3'>{'曼陀羅 九宮格思考術'}</h1>
       <MandoraThinkingTableContainer />
     </div>
   )
